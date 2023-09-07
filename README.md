@@ -118,4 +118,5 @@ We can use CloudWatch to automatically trigger the Lambda function every hour, d
 ![cw9](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/d760257e-fe30-4610-9cd9-97a7ff86783b)
 ![cw10](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/61f60cf5-ff79-4a87-a659-6b1cb1516865)
 
-6.You have successfully created the scheduler, which will trigger the Lambda function every hour.
+6. You have successfully created the scheduler, which will trigger the Lambda function every hour.
+7. However, please note that this setup will incur some costs since the function is triggered continuously every hour. Alternatively, we can configure it to run on specific days and times as needed.
