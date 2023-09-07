@@ -92,3 +92,30 @@ There are many similar problems like this. For instance, we might attach an Elas
 
 ## Additional notes:
 We can use CloudWatch to automatically trigger the Lambda function every hour, day, minute, or second. However, this may result in higher costs because our Lambda execution time increases when triggered automatically. Nevertheless, manually triggering this function is a better choice because it allows us to trigger it when needed.
+
+## CloudWatch or EventBridge Implementation :
+### Steps :
+1. Navigate to CloudWatch Console.
+
+![cw1](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/86e6d0b0-9870-43f5-bdaf-7550fe347ec9)
+![cw2](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/7a68754a-6228-4a00-be8a-815e2d70f8ce)
+![cw3](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/8124a1b3-efaf-453f-8ed6-d0d228c3edf2)
+![cw4](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/5a298d1f-7dc0-43e5-825b-b79a41ac8efc)
+
+2. Next, on the following page, configure the schedule pattern as follows:
+
+![cw5](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/6d7d0a2b-e916-4930-af66-34a322302fe6)
+
+3. Scroll Down and then Click Next.
+
+![cw6](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/dcca1fe9-faaf-4927-b50b-8d230ecfc7a2)
+![cw7](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/bbabe976-93d9-4f63-88f3-0937f6e433f7)
+
+4. Scroll Down and then Click Next.
+5. On the next page, choose 'None' for the 'Action after Schedule' option.
+
+![cw8](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/297b9ced-d775-4d6f-a583-9a5994343cc9)
+![cw9](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/d760257e-fe30-4610-9cd9-97a7ff86783b)
+![cw10](https://github.com/itz-mathesh/aws-cost-optimization/assets/144098846/61f60cf5-ff79-4a87-a659-6b1cb1516865)
+
+6.You have successfully created the scheduler, which will trigger the Lambda function every hour.
